@@ -1,0 +1,4 @@
+# Logstash 介绍
+- Logstash由jruby编写，运行在JVM中，占用资源相对Filebeat要多，但功能亦更强大
+- Logstash支持多种输入方式，如文件、redis或者kafka等，同时提供filter模块，支持通过正则表达式对日志内容进行转换，例如将日志中不同的部分映射到特定的字段，将非结构化的日志转换为结构化日志，最终输入到Elasticsearch进行处理
+- Logstash部署方式有两种，一种是部署到产生日志的源服务器上，作为日志传输agent，一种是部署到Elasticsearch前，对日志进行过滤和转换
